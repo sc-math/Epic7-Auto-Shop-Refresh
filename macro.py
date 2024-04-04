@@ -55,7 +55,7 @@ def AtualizaLoja():
 
     try:
         # Procurar na tela o Botão de Refresh
-        location = pyautogui.locateOnScreen('refresh.png', confidence=confidence_rate)
+        location = pyautogui.locateOnScreen('img/refresh.png', confidence=confidence_rate)
         center = pyautogui.center(location)
 
         # Clicar no Botão de Refresh
@@ -80,7 +80,7 @@ def ArrastarLoja():
 def VerificaBookmark1():
     global bookmark
     try:
-        location = pyautogui.locateOnScreen('covenant.png', confidence=confidence_rate)
+        location = pyautogui.locateOnScreen('img/covenant.png', confidence=confidence_rate)
 
         # Clicar no botão de Comprar
         pyautogui.click(screen_width * 0.901, location.top + location.height)
@@ -99,7 +99,7 @@ def VerificaBookmark1():
 def VerificaBookmark2():
     global bookmark
     try:
-        location = pyautogui.locateOnScreen('covenant.png', confidence=confidence_rate, region=(810, 670, 170, 370))
+        location = pyautogui.locateOnScreen('img/covenant.png', confidence=confidence_rate, region=(810, 670, 170, 370))
 
         # Clicar no botão de Comprar
         pyautogui.click(screen_width * 0.901, location.top + location.height)
@@ -118,7 +118,7 @@ def VerificaBookmark2():
 def VerificaMystic1():
     global mystic
     try:
-        location = pyautogui.locateOnScreen('mystic.png', confidence=confidence_rate)
+        location = pyautogui.locateOnScreen('img/mystic.png', confidence=confidence_rate)
 
         # Clicar no botão de Comprar
         pyautogui.click(screen_width * 0.901, location.top + location.height)
@@ -137,7 +137,7 @@ def VerificaMystic1():
 def VerificaMystic2():
     global mystic
     try:
-        location = pyautogui.locateOnScreen('mystic.png', confidence=confidence_rate, region=(810, 670, 170, 370))
+        location = pyautogui.locateOnScreen('img/mystic.png', confidence=confidence_rate, region=(810, 670, 170, 370))
 
         # Clicar no botão de Comprar
         pyautogui.click(screen_width * 0.901, location.top + location.height)
@@ -161,7 +161,7 @@ def Stop():
 def main():
     InicializaVariaveis()
 
-    print(screen_width, screen_height)
+    # print(screen_width, screen_height)
 
     number_skystone_spend = int(input("Informe quantas Skys deseja roletar: "))
     number_skystone_spend = number_skystone_spend // 3
